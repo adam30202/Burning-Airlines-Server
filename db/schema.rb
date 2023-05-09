@@ -25,6 +25,10 @@ ActiveRecord::Schema.define(version: 2023_05_09_060252) do
 
   create_table "flights", force: :cascade do |t|
     t.integer "airplane_id"
+    t.text "to"
+    t.text "from"
+    t.text "date"
+    t.integer "seats"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
