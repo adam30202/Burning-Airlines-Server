@@ -4,15 +4,11 @@ Rails.application.routes.draw do
   resources :admins, :only => [:index, :new, :create]
   resources :reservations
   resources :airplanes
-<<<<<<< HEAD
-  resources :flights
-=======
   resources :login
   resources :sessions
 
   get '/admin/signup' => 'admins#new'
   post '/admin/signup' => 'admins#create'
 
->>>>>>> 7206193 (Added more seed data and made changes to controllers)
 
 end
