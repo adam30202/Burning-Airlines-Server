@@ -1,2 +1,7 @@
-<h1>Reservations#show</h1>
-<p>Find me in app/views/reservations/show.html.erb</p>
+<%= @reservation.id %>
+
+<p>User: <%= @reservation.user_id %></p>
+<p>Flight: <%= @reservation.flight_id %></p>
+
+<%= link_to "Edit", edit_reservation_path(@reservation) %>
+<%= link_to "Delete", @reservation, :method => :delete %>
