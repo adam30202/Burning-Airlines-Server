@@ -1,0 +1,9 @@
+<%= @flight.id %>
+
+<p>To: <%= @flight.to %></p>
+<p>From: <%= @flight.from %></p>
+<p>Date: <%= @flight.date %></p>
+<p>Seats: <%= @flight.seats %></p>
+
+<%= link_to "Edit", edit_flight_path(@flight) %>
+<%= link_to "Delete", @flight, :method => :delete %>
