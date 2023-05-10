@@ -1,0 +1,7 @@
+<h1>Flights</h1>
+
+<%= link_to "New flight", new_flight_path %>
+
+<% @flights.each do |flight| %>
+    <p><%= link_to flight.id, flight  %></p>   
+<% end %>

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :users, :only => [:index, :new, :create]
   resources :reservations
   resources :airplanes
+  resources :flights
 
   get '/login' => 'session#new'
   post '/login' => 'session#create'
