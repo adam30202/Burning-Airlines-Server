@@ -1,0 +1,11 @@
+<%= form_for @airplane do |f| %>
+
+    <%= f.label :rows %>
+    <%= f.text_field :rows, :required => true %>
+
+    <%= f.label :column %>
+    <%= f.text_field :column , :required => true %>
+
+    <%= f.submit %>
+
+<% end %>

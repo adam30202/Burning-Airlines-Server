@@ -1,0 +1,7 @@
+<h1>Airplanes#index</h1>
+
+<%= link_to "New airplane", new_airplane_path %>
+
+<% @airplanes.each do |airplane| %>
+    <p><%= link_to airplane.id, airplane  %></p>   
+<% end %>

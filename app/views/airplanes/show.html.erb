@@ -1,0 +1,7 @@
+<%= @airplane.id %>
+
+<p>Rows: <%= @airplane.rows %></p>
+<p>Column: <%= @airplane.column %></p>
+
+<%= link_to "Edit", edit_airplane_path(@airplane) %>
+<%= link_to "Delete", @airplane, :method => :delete %>
