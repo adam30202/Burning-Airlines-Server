@@ -25,10 +25,6 @@ ActiveRecord::Schema.define(version: 2023_05_10_014133) do
 
   create_table "flights", force: :cascade do |t|
     t.integer "airplane_id"
-    t.text "to"
-    t.text "from"
-    t.text "date"
-    t.integer "seats"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -44,6 +40,7 @@ ActiveRecord::Schema.define(version: 2023_05_10_014133) do
     t.text "username"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
     t.string "role"
   end
 
