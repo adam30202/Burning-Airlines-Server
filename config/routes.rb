@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   get '/admin/signup' => 'admins#new'
   post '/admin/signup' => 'admins#create'
+  get '/current_user', to: 'users#show'
 
 
 end
