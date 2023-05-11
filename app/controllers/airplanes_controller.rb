@@ -9,8 +9,18 @@ class AirplanesController < ApplicationController
   end
 
   def create
-      airplane = Airplane.create airplane_params
-      redirect_to airplane
+      # airplane = Airplane.create airplane_params
+
+      data = JSON.parse(request.body.read)
+      puts data
+      @airplane = Airplane.new(data)
+      if @airplane.save
+        render json: @airplane, status: :created
+      else
+        render json: @airplane.errors, status: :unprocessable_entity
+      end
+    
+      # redirect_to airplane
   end
 
   def edit
