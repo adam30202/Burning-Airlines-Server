@@ -10,7 +10,8 @@ class AirplanesController < ApplicationController
 
   def create
       airplane = Airplane.create airplane_params
-      redirect_to airplane
+    #   redirect_to airplane
+    render :json => airplane
   end
 
   def edit

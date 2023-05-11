@@ -24,26 +24,6 @@ a17 = Airplane.create :column => 'A B C D E F', :rows => '1 2 3 4 5 6'
 puts "#{ Airplane.count } airplanes"
 
 Flight.destroy_all
-<<<<<<< HEAD
-
-f1 = Flight.create :to => 'New York', :from => 'London', :date => '2023-06-01', :seats => 10
-f2 = Flight.create :to => 'New York', :from => 'London', :date => '2023-06-01', :seats => 28
-f3 = Flight.create :to => 'New York', :from => 'London', :date => '2023-06-01', :seats => 120
-f4 = Flight.create :to => 'Paris', :from => 'London', :date => '2023-07-15', :seats => 90
-f5 = Flight.create :to => 'Paris', :from => 'London', :date => '2023-08-20', :seats => 200
-f6 = Flight.create :to => 'Paris', :from => 'New York', :date => '2023-09-10', :seats => 150
-f7 = Flight.create :to => 'Sydney', :from => 'Paris', :date => '2023-10-12', :seats => 70
-f8 = Flight.create :to => 'Sydney', :from => 'Paris', :date => '2023-11-15', :seats => 80
-f9 = Flight.create :to => 'Sydney', :from => 'London', :date => '2023-12-20', :seats => 100
-f10 = Flight.create :to => 'San Fransico', :from => 'New York', :date => '2024-01-05', :seats => 180
-f11 = Flight.create :to => 'San Fransico', :from => 'New York', :date => '2024-02-20', :seats => 90
-f12 = Flight.create  :to => 'San Fransico', :from => 'New York', :date => '2024-03-25', :seats => 120
-f13 = Flight.create  :to => 'London', :from => 'New York', :date => '2024-04-15', :seats => 200
-f14 = Flight.create  :to => 'London', :from => 'Paris', :date => '2024-05-20', :seats => 80
-f15 = Flight.create  :to => 'London', :from => 'New York', :date => '2024-06-15', :seats => 70
-f16 = Flight.create  :to => 'Paris', :from => 'London', :date => '2024-07-18', :seats => 120
-f17 = Flight.create  :to => 'Paris', :from => 'New York', :date => '2024-08-22', :seats => 99
-=======
 f1 = Flight.create :airplane_id => a1.id, :to => 'New York', :from => 'London', :date => '2023-06-01', :seats => 10
 f2 = Flight.create :airplane_id => a2.id, :to => 'New York', :from => 'London', :date => '2023-06-01', :seats => 28
 f3 = Flight.create :airplane_id => a3.id, :to => 'New York', :from => 'London', :date => '2023-06-01', :seats => 120
@@ -61,7 +41,6 @@ f14 = Flight.create :airplane_id => a14.id, :to => 'London', :from => 'Paris', :
 f15 = Flight.create :airplane_id => a15.id, :to => 'London', :from => 'New York', :date => '2024-06-15', :seats => 70
 f16 = Flight.create :airplane_id => a16.id, :to => 'Paris', :from => 'London', :date => '2024-07-18', :seats => 120
 f17 = Flight.create :airplane_id => a17.id, :to => 'Paris', :from => 'New York', :date => '2024-08-22', :seats => 99
->>>>>>> 28dd7b9c2e59b6685e3d0d40b8db6f85748cc1bd
 puts "#{ Flight.count } flights"
 
 Reservation.destroy_all
